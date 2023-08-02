@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    div#div01{
+        background-color: pink;
+        width: 120px;
+        height: 20px;
+        padding: 80px;
+        margin: 20px;
+    }
+
+    div#div02{
+        background-color: blue;
+        width: 120px;
+        height: 20px;
+        padding: 80px;
+        margin: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="div01" onmouseover="mOver(this)" onmouseout="mOut(this)"> Mouse Over Me </div>
+
+    <div id="div02" onmousedown="mOver(this)" onmouseup="mOut(this)"> Click Me </div>
+
+    <script>
+        function mOver(obj){
+            document.getElementById("div01").style.backgroundColor = "green"
+            obj.innerHTML = "Thank you !!"
+            
+        }
+
+        function mOut(obj){
+            document.getElementById("div01").style.backgroundColor = "pink"    
+            obj.innerHTML = " Mouse Over Me "
+        }
+
+    </script>
+</body>
+</html>

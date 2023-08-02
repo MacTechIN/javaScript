@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let i = true; 
+    </script>
+</head>
+<body>
+    <h2>Demo JS in Head</h2>
+
+    <p id="demo"> A paragraph. </p>
+
+    <button type="button" onclick="myFunction()">Try it </button>
+
+    <script>
+        
+        
+        function myFunction() {
+            i = !i;
+            if (i == true){
+            document.getElementById("demo").innerHTML = "<del>  strong tag </del>"  + i  
+            
+            
+            }
+              
+        }
+
+    </script>
+
+
+
+</body>
+</html>

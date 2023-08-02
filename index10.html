@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="test2">JavaScript HTML EVENTS</h2>
+
+    <h2 onclick="document.getElementById('test2').innerHTML='TEST2'"> Click here !!</h2>
+
+    <h2 id="test" onclick="document.getElementById('test').innerHTML='TEST'"> Click here !!</h2>
+
+    <h2 onclick="this.innerHTML = 'Oppps'">Click here !!</h2>
+
+    <h3 onclick="changeText(this)">Click on this h3 text !!!</h3>
+
+    <script>
+        function changeText(id){
+            id.innerHTML = "Opps333333!!~~"
+        }
+    </script>
+
+</body>
+</html>

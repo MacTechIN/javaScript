@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS HTML DOM Example 1 </h2>
+    <p> Changing the HTML style</p>
+
+    <p id="p1">Hello World!</p>
+    <p id="p2">Hello World!!!</p>
+
+    <script>
+        var d = document
+        d.getElementById("p2").style.color = "blue"
+        d.getElementById("p2").sytle.fontFamily = "Arial"
+        d.getElementById("p2").style.fontSize = "100px"
+
+        var s = d.getElementById("p1").style 
+
+        s.color = "Red"
+        s.fontFamily = "Arial"
+        s.fontSize = "500px"
+
+    </script>
+
+</body>
+</html>
