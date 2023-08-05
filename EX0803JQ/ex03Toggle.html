@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Toggle</title>
+    <script src="./jquery-3.1.1.min.js"></script>
+    <script>
+
+    $(document).ready(function () {
+       $("button").click(function (e) { 
+        e.preventDefault();
+
+        $("p").toggle();
+
+        
+
+       });
+    });
+   
+    </script>
+</head>
+<body>
+
+    <button> Toggle between hideing and showing the paragrpah </button>
+
+    <p>This is paragraph with little contents.</p>
+    <p>This is  another small paragraph </p>
+    
+</body>
+</html>
